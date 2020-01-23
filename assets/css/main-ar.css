@@ -1,0 +1,139 @@
+/* --------------- Start Global --------------- */
+    body,h1,h2,h3,h4,a,li,span{
+        font-family: 'Cairo', 'Roboto',  sans-serif;
+    }
+
+/* --------------- End Global --------------- */
+/*=============================================================*/
+
+/* --------------- Header Start --------------- */
+
+/*Brand*/
+    .navbar  .navbar-header > a{position: relative;}
+    .navbar-brand span{	
+        padding: 0 80px 0 20px ;
+    }
+    .navbar-brand img{
+        float: right;/*leftToRight*/
+        right: 2%;/*leftToRight*/
+        left:  auto;
+    }
+    .navbar .dropdown-menu{
+        text-align: right;/*arabic*/
+    }
+
+
+    .navbar-nav>li>.dropdown-menu {
+        text-align: left;
+    }
+
+    /*Search Form*/
+    .mySearch input{
+        border-radius: 4px 0 0 4px !important ;
+        text-align: right;
+    }
+    .mySearch button{
+        border-radius: 0 4px 4px 0 !important ;
+        text-align: right;
+    }
+
+/* --------------- Header End --------------- */
+/*=============================================================*/
+
+/* --------------- Main Carousel Start --------------- */
+    
+
+/* --------------- Main Carousel End --------------- */
+/*=============================================================*/
+
+/* --------------- About Start --------------- */
+    #about{
+    direction:rtl;
+    }
+
+    #about h2{
+        margin: 40px 40px 20px 0;
+    }
+    #about .speach p{
+        margin: 0 40px 20px 0;
+    }
+    .mychar h3{
+        margin-top: 50px;
+    }
+    .mychar p{
+        padding-right: 0;
+        padding-left: 30px;
+    }
+/* --------------- About End --------------- */
+/*=============================================================*/
+
+/* --------------- Team Start --------------- */
+.modal-header {
+    direction: rtl;
+}
+.modal-title {
+    
+    padding-right: 20px;
+}
+.modal-body {
+    direction: rtl;
+}
+blockquote {
+    border-left: 0;
+}
+/*=============================================================*/
+
+/* --------------- Portfolio Start --------------- */
+    #portfolio{
+    direction:rtl;
+    }
+
+    #portfolio h2{
+        margin: 40px 40px 20px 0;
+    }
+    #portfolio .speach p{
+        margin: 0 40px 20px 0;
+        line-height: 1.8em;
+    }
+    #portfolio .speach p:last-child{margin-bottom: 40px;}
+    #portfolio .power{
+        padding: 0 15px 25px 50px;
+    }
+
+/* --------------- Portfolio End --------------- */
+/*=============================================================*/
+
+/* --------------- Extra1 Start --------------- */
+
+
+
+/* --------------- Extra1 End --------------- */
+/*=============================================================*/
+
+/* --------------- Contact Start --------------- */
+    #contact{
+        text-align: right;
+        direction: rtl;
+    }
+    .contactForm{
+        direction: rtl;
+    }
+/* --------------- Contact End --------------- */
+/*=============================================================*/
+
+/* --------------- Footer Start --------------- */
+    footer{
+        direction: rtl;
+    }
+/* --------------- Footer End --------------- */
+/*=============================================================*/
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,560 @@
+/* --------------- Start Global --------------- */
+
+    body,h1,h2,h3,h4,a,li,span{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', 'Cairo', sans-serif;
+    }
+    body{
+        color: #6d6e71;
+        margin-top: 10vh;
+        position: relative;
+        -ms-overflow-x: hidden;
+    }
+    a{
+        text-transform: capitalize;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .fullHeight{
+        min-height: 100vh;
+    }
+    button:focus {outline: none;}
+/* --------------- End Global --------------- */
+/*=============================================================*/
+
+/* --------------- Header Start --------------- */
+
+    #home{font-weight: 500;}
+    #home a{
+        text-transform: uppercase;
+    }
+    .navbar-inverse{
+        background-color: #232323;
+        border-radius: 0;
+        margin: 0;
+        border: 0;
+    }
+    /*navbar*/
+    .navbar-inverse{
+        height: 10vh;
+        padding-top: 1vh;
+    }
+    .navbar-inverse .navbar-brand{color: #fff;}
+    .navbar-inverse .navbar-nav>li>a{color: #fff;}
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-brand:hover{color: #104780;}
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:focus,
+    .navbar-inverse .navbar-nav>.active>a:hover {
+        color: #104780;
+        background-color: inherit;
+        font-weight: 600;
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-color: #232323;
+        background: #232323;
+    }
+    /*Brand*/
+    .navbar  .navbar-header > a{position: relative;}
+    .navbar-brand span{	
+        padding: 0 20px 0 80px ;
+        font-size: 22px;
+    }
+    .navbar-brand img{
+        max-height: 70px;
+        max-width: 70px;
+        float: left;
+        display: inline-block;
+        position: absolute;
+        top: -20%;
+        left: 2%;
+    }
+    /*.navbar .dropdown-menu{
+        text-align: left;/*arabic
+    }*/
+    /*navbar Affix & ScrollSpy Styles*/
+    .affix {
+        top:0;
+        width: 100%;
+        z-index: 9999 !important;
+        opacity: 0.9;
+        height: 5vh;
+        padding-top: 0;
+
+    }
+
+    /*Search Form*/
+    .mySearch input{
+        border-radius: 4px 0 0 4px !important ;
+    }
+    .mySearch button{
+        border-radius: 0 4px 4px 0 !important ;
+    }
+    .mySearch button:hover{
+        background:#104780;
+        color: #fff;
+        
+    }
+    .form-control:focus {
+        border-color: #104780;
+        color:#333;
+        box-shadow: none; 
+        
+    }
+
+    /*language button*/
+    .navbar-inverse .navbar-nav>.open>a,
+    .navbar-inverse .navbar-nav>.open>a:focus,
+    .navbar-inverse .navbar-nav>.open>a:hover {
+        color: #104780;
+        background-color: #232323;
+    }
+
+    .langList .dropdown-menu>li>a:focus,
+    .langList .dropdown-menu>li>a:hover {
+        color: #104780;
+        text-decoration: none;
+        background-color: #d5d5d5;
+    }
+    .langList .dropdown-menu .langActive{
+        color: #104780 ;
+        background-color: #d5d5d5 ;
+    }
+
+    /* for navbar to collapse in 1200px*/
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+        .navbar-collapse.collapse.in {
+            display: block !important;
+        }
+        .navbar-header .collapse, .navbar-toggle {
+            display:block !important;
+        }
+        .navbar-header {
+            float:none;
+        }
+    }
+/* --------------- Header End --------------- */
+/*=============================================================*/
+
+/* --------------- Main Carousel Start --------------- */
+
+    #mainCarousel{
+        text-align: center;
+    }
+    #mainCarousel .item {
+        width: 100%;
+        height: 90vh;
+        border-radius: 0;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+    }       
+
+
+    #mainCarousel .owl-dots {
+        position: absolute;
+        bottom: 3%;
+        left: 25%;
+        right: 25%;
+    }
+            
+    #mainCarousel .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+    } 
+
+    #mainCarousel .owl-carousel {position: relative;}
+
+    #mainCarousel .owl-theme .owl-nav {margin-top: 0;}
+
+    #mainCarousel .owl-carousel .owl-nav button.owl-next,
+    #mainCarousel .owl-carousel .owl-nav button.owl-prev, #mainCarousel .owl-carousel button.owl-dot button{
+        display: none;
+    }
+
+    #mainCarousel .owl-controls .owl-dot.active span,
+    #mainCarousel .owl-controls.clickable .owl-dot:hover span {
+        background: #017101;
+    }
+    #mainCarousel h1{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 4em;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 50px; 
+    }
+
+/* --------------- Main Carousel End --------------- */
+/*=============================================================*/
+
+/* --------------- About Start --------------- */
+
+    #about{
+        padding-top: 50px;
+        background-color:  #f6f6f6;
+
+    }
+    #about{
+        background: #f2f2f1;
+        overflow: auto;
+        padding-top: 30px;
+    }
+
+    #about h2{
+        margin: 40px 40px 20px 0;
+        font-weight: bold;
+    }
+    #about .speach p{
+        font-size: 13px;
+        margin: 0 40px 20px 0;
+        line-height: 1.8em;
+    }
+    #about .speach p:last-child{margin-bottom: 40px;}
+    #about .power{
+        padding: 0 15px 25px 50px;
+    }
+    /*Affecting Portfolio*/
+    .mychar h3{
+        margin-top: 50px;
+    }
+    .mychar p{
+        font-size: 13px;
+        line-height: 1.8em;
+        padding-left: 30px;
+        margin-bottom: 50px;
+    }
+
+/* --------------- About End --------------- */
+/*=============================================================*/
+
+/* --------------- Team Start --------------- */
+
+    #team{
+        padding-top: 50px;
+        background: url('../images/team.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    /* This Styling Affecting other Carousel */
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot button {
+        font-size: 100px;
+        color: #104780;
+    }
+            
+    .owl-prev {
+        position: absolute;
+        top: 40%;
+        left: -5%;
+    }
+            
+    .owl-next {
+        position: absolute;
+        top: 40%;
+        right: -5%;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: #104780;
+    }
+            
+    .testimonial {
+        border-radius: 10px;
+        border: 5px solid #104780;
+        background: white;
+        text-align: center;
+        margin: 180px 15px 130px 15px;
+        position: relative;
+        height: 300px;
+    }
+    .testimonial:hover{
+        border-color: #d6d6d6;
+        cursor: pointer;
+    }
+            
+    .subCarousel img {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+		display: block;
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: none;
+    }
+    .owl-next:focus, .owl-prev:focus {outline: none;}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+	opacity: 0;
+  height: 0;
+  transition: .5s ease;
+  background: rgba(16, 71, 128, 0.5);
+}
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #104780;
+}
+.testimonial:hover .overlay{
+	opacity: 1;
+	height: 100%;
+}
+.modal-content{
+	margin-top: 80px;
+    border: 3px solid #ccc;
+}
+.modal-title {
+    color: #104780;
+    padding-left: 20px;
+}
+.modal-header {
+    border-color: #ccc;
+}
+.close:focus, .close:hover {
+    color: #104780;
+}
+.modal-footer {
+    border-color: #ccc;
+}
+.modal-footer .btn:hover, .modal-footer .btn:focus{
+    color: #104780;
+    background-color: #fff;
+    border-color: #ccc;
+}
+/* --------------- Team End --------------- */
+/*=============================================================*/
+
+/* --------------- Portfolio Start --------------- */
+    #portfolio{
+        padding-top: 50px;
+        background: #f2f2f1;
+    }
+    #portfolio{
+        background: #f2f2f1;
+        overflow: auto;
+        padding-top: 30px;
+    }
+
+    #portfolio h2{
+        margin: 40px 40px 20px 0;
+        font-weight: bold;
+    }
+    #portfolio .speach p{
+        font-size: 13px;
+        margin: 0 20px 40px 0;
+        line-height: 1.8em;
+    }
+    #portfolio .speach p:last-child{margin-bottom: 40px;}
+    #portfolio .power{
+        padding: 0 15px 25px 50px;
+    }
+
+/* --------------- Portfolio End --------------- */
+/*=============================================================*/
+
+/* --------------- Extra1 Start --------------- */
+    #extra1{
+        padding-top:50px;
+        background: url('../images/port.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+/* --------------- Extra1 End --------------- */
+/*=============================================================*/
+
+/* --------------- Contact Start --------------- */
+    #contact{
+        position: relative;
+        background-color: #f6f6f6;
+        padding-top: 50px;
+    }
+    #contact .contactForm{
+        height:60vh;
+        padding: 0 20px 30px;
+    }
+    #contact .contactForm h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        font-weight: 600;
+        padding-bottom: 30px;
+        text-align: center
+    }
+
+    #contact .map{
+        height: 40vh;
+        width: 100%;
+        position: absolute;
+        top:60vh;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .contactForm .btn:hover, .contactForm .btn:focus{
+        color: #104780;
+        background-color: #fff;
+        border-color: #104780;
+    }
+    /* for navbar to collapse in 768px*/
+    @media (max-width: 768px){
+        #contact {
+            margin-bottom: 10vh;
+        }
+        #contact .contactForm{
+        height:60vh;
+        }
+
+        #contact .map{
+            height: 25vh;
+            width: 100%;
+            position: absolute;
+            top:85vh;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+    }
+/* --------------- Contact End --------------- */
+/*=============================================================*/
+
+/* --------------- Footer Start --------------- */
+    footer .social{
+        text-align: center;
+        padding: 30px;
+    }
+    .copyRights{
+        text-align: center;
+        background-color: #0d0d0d;
+        width: 100%;
+        border-top: 1px solid #f6f6f6;
+    }
+    .copyRights p{
+        margin: 0;
+        padding: 10px;
+    }
+    footer{
+        background-color: #232323;
+        color: #6c6c6c;
+    }
+    footer  h2{
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: normal;
+        font-size: 18px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    footer  a:hover ,footer .col .tags:hover{
+        color: #fff;
+        border-color: #fff;
+        cursor: pointer;
+    }
+
+    footer  ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .mycat{
+        color: #6c6c6c;
+        font-size: 13px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #6c6c6c; 
+    }
+    .mycat:first-child{padding-top: 0px;}
+    .mycat:hover ,footer .recent h3:hover{
+        color: #fff;
+        cursor: pointer;
+    }
+
+    footer .fa {
+        color: #191f21;
+        font-size: 24px;
+        background: #4b5456;
+        line-height: 38px;
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #191f21;
+        border-radius: 50%
+    }
+    footer .fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+    }
+    footer .fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+    }
+    footer .fa-pinterest-p:hover {
+    background: #cb2027;
+    color: white;
+    }
+    footer .fa-google-plus:hover {
+    background: #dd4b39;
+    color: white;
+    }
+    footer .fa-dribbble:hover {
+    background: #ea4c89;
+    color: white;
+    }
+    footer .fa-linkedin:hover {
+    background: #0274b3;
+    color: white;
+    }
+
+
+/* --------------- Footer End --------------- */
+/*=============================================================*/
+
+
+
+
+
+
+
+
+
+
+
